@@ -9,6 +9,8 @@ class Doctor
     @name = name
   end
 
-  def
+  def self.all
+    @@all 
+  end
 
 end
