@@ -15,6 +15,7 @@ class Patient
     Appointment.all.map do |appt|
       if appt.patient == self
         doctors << appt.doctor
+      end
     end
   end
 end
