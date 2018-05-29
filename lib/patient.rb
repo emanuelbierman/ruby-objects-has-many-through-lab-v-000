@@ -12,7 +12,7 @@ class Patient
 
   def doctors
     doctors = []
-    Appointment.all.select do |appt|
+    Appointment.all.map do |appt|
       appt.patient == self
     end
   end
