@@ -11,7 +11,8 @@ class Patient
   end
 
   def doctors
-    appts = Appointment.all.select do |appt|
+    doctors = []
+    Appointment.all.select do |appt|
       appt.patient == self
     end
   end
