@@ -13,7 +13,8 @@ class Patient
   def doctors
     doctors = []
     Appointment.all.map do |appt|
-      appt.patient == self
+      if appt.patient == self
+        doctors << appt.doctor
     end
   end
 end
