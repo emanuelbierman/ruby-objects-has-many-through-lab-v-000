@@ -10,6 +10,10 @@ class Patient
     Appointment.new(self, doctor, date)
   end
 
+  def appointments
+    
+  end
+
   def doctors
     doctors = []
     Appointment.all.map do |appt|
